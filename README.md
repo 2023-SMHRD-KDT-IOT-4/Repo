@@ -89,17 +89,36 @@
 <br>
 
 ## 🖥 화면 구성
-
-### 로그인/회원가입/회원괸리/회원수정/회원탈퇴
-![image](https://user-images.githubusercontent.com/25995055/178401098-95f15a0e-a2de-415e-83d5-883bb4cb0656.png)
+### 메인화면
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/25c3f866-21e8-41db-8017-640027c3be2d)
 <br>
 
-### 옷 정보/코디 추천(날씨, 팁, 오늘의 코디, 참고할 수 있는 코디)
-![image](https://user-images.githubusercontent.com/25995055/178401127-287e6de2-4396-49fc-a107-59c4d5cd55c7.png)
+### 로그인/회원가입/마이페이지(회원정보수정)
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/40a60943-5bb2-436e-a4e0-3ccb860e2b73)
 <br>
 
-### 일정/고객센터
-![image](https://user-images.githubusercontent.com/25995055/178401150-861f0e93-0f40-4fae-98c1-2099bf513c8d.png)
+### 잠금/잠금해제
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/f5a4771e-905f-469b-bbd5-00f1e0a165c3)
+<br>
+
+### 메뉴
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/d1d141ec-62f7-4090-89cc-9eeb01d977a5)
+<br>
+
+### 라이딩기록
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/3ae8055f-8209-41e5-a74b-2f691c95ab21)
+<br>
+
+### 자전거위치찾기
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/3fe91cec-6b3b-4558-a2dd-fbd3a4e461bf)
+<br>
+
+### 유의사항
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/cbd87ac5-f47c-490b-8c5f-1970b662ed11)
+<br>
+
+### 게시판
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/dc8b850a-2093-4303-902a-16200ec6dbde)
 <br>
 
 ## 👨‍👩‍👦‍👦 팀원 역할
