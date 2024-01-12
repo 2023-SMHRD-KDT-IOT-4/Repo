@@ -63,7 +63,7 @@ public class ArduinoController {
 	}
 	
 	//현재위치 확인 페이지로 위도,경도값 리턴
-	@RequestMapping(value="/test2", method=RequestMethod.GET)
+	@RequestMapping(value="/CheckNowLocation", method=RequestMethod.GET)
 	public @ResponseBody Gps CheckNowLocation(@RequestParam("latitude") Double lat,@RequestParam("longitude") Double lng,@RequestParam("user_id") String user_id,@RequestParam("theft") int theft) {
 		gps1.setLat(lat);
 		gps1.setLng(lng);

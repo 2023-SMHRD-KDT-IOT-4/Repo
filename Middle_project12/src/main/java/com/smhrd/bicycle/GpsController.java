@@ -44,7 +44,7 @@ public class GpsController {
 		
 		
 		
-		return "redirect:/Data";
+		return "Data";
 	}
 	
 }
