@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.smhrd.bicycle.mapper.BoardMapper">
+	
+	<insert id="write" parameterType="com.smhrd.bicycle.model.Board">
+		insert into community_info(comm_seq, comm_title, comm_content, comm_file, created_at, user_id) 
+		values(1, #{comm_title}, #{comm_content}, #{comm_file},sysdate,#{user_id})	
+	</insert>
+	
+</mapper>
