@@ -85,7 +85,7 @@
                   <img src="resources/images/lock1.jpg" alt="" />
                </span>
                <header class="major">
-                  <h3 style="font-size: 40px;"><a href="lockUnlock.html" class="link">LOCK/UNLOCK</a></h3>
+                  <h3 style="font-family: 'Jua', sans-serif; font-size: 40px;"><a href="lockUnlock.html" class="link">LOCK/UNLOCK</a></h3>
                   <p style="font-size: 20px;">잠금/잠금해제</p>
                </header>
             </article>
