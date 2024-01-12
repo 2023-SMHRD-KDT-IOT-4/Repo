@@ -75,16 +75,24 @@ html{
 					  </tr>
 					</thead>
 					<tbody>
-				   <!-- 게시물 출력 -->
-				   <c:forEach items="${list}" var="b">
-							<tr>
-								<td style="text-align: center;">${b.comm_seq }</td>
-								<td style="text-align: center;"><a href="board/content/${b.comm_seq }">${b.comm_title }</a></td>
-								<td style="text-align: center;">${b.user_id }</td>
-								<td style="text-align: center;">${b.created_at }</td>
-								<td style="text-align: center;"><a href="BoardDelete/${b.comm_seq }">삭제</a></td>
-							</tr>
-					</c:forEach>
+				  <!-- 게시물 출력 -->
+               <c:forEach items="${list}" var="b">
+                     <tr>
+                        <td style="text-align: center;">${b.comm_seq }</td>
+                        <td style="text-align: center;"><a href="board/content/${b.comm_seq }">${b.comm_title }</a></td>
+                        <td style="text-align: center;">${b.user_id }</td>
+                        <td style="text-align: center;">${b.created_at }</td>
+                        <c:choose>
+                              <c:when test="${user_id eq b.user_id }">
+                              <td style="text-align: center;"><a href="BoardDelete/${b.comm_seq }">삭제</a></td>
+                              </c:when>
+                              <c:otherwise>
+                                 <td></td>
+                              </c:otherwise>
+                           </c:choose>
+                     </tr>
+               </c:forEach>
+
 					  <tr>
 						 <td colspan="5">
 							<button onclick="location.href='Board_02'" class="success">글작성</button>
