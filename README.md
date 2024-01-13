@@ -81,8 +81,7 @@
 <br>
 
 ## 📌 서비스 흐름도
-![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/88411ab4-080b-4bf5-979f-aeb9c224c9fa)
-
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/1578f63e-4eee-4959-903b-24bb0eff899d)
 <br>
 
 ## 📌 ER다이어그램
