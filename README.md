@@ -1,5 +1,6 @@
 # 🚲 Bicycle Safe Security (BSS) (팀명: ARGUINOM)
-![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/6d326f33-19cc-4d13-9d82-67035b88786c)
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/1f54dc73-e7de-4e95-9e03-fd4ff5f3f9a5)
+
 
 ## 👀 서비스 소개
 * 서비스명:  IoT기반 자전거 보안관리 시스템
@@ -72,7 +73,8 @@
 <br>
 
 ## ⚙ 시스템 아키텍처
-![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/165a2d71-1bc7-4308-93e1-a1372500f057)
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/f01b727a-fd4b-413e-b878-39c5aa5f87de)
+
 <br>
 
 ## 📌 SW유스케이스
@@ -161,12 +163,3 @@
   </tr>
 </table>
 
-## 🤾‍♂️ 트러블슈팅
-개념: 문제 해결을 위해 문제의 원인을 논리적이고 체계적으로 찾는 일이며 제품이나 프로세스의 운영을 재개
-프로젝트 진행하는 동안 발생했던 이슈 중 가장 기억에 남았던 문제와 해결 프로세스 나열(2~5가지 정도)
-  
-* 문제1<br>
- 문제점 설명 및 해결방안
- 
-* 문제2<br>
- 문제점 설명 및 해결방안
