@@ -1,5 +1,5 @@
-# 🚲 Bicycle Security System(BSS) (팀명: ARGUINOM)
-![1](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/b5d3572e-0c45-4933-b214-92ccde783d57)
+# 🚲 Bicycle Safe Security (BSS) (팀명: ARGUINOM)
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/6d326f33-19cc-4d13-9d82-67035b88786c)
 
 ## 👀 서비스 소개
 * 서비스명:  IoT기반 자전거 보안관리 시스템
