@@ -1,5 +1,5 @@
 # 🚲 Bicycle Security System(BSS) (팀명: ARGUINOM)
-![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/blob/master/1.png?raw=true)
+![1](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/b5d3572e-0c45-4933-b214-92ccde783d57)
 
 ## 👀 서비스 소개
 * 서비스명:  IoT기반 자전거 보안관리 시스템
@@ -72,7 +72,7 @@
 <br>
 
 ## ⚙ 시스템 아키텍처
-![서비스 아키텍처](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/blob/master/%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90.png?raw=true)
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/165a2d71-1bc7-4308-93e1-a1372500f057)
 <br>
 
 ## 📌 SW유스케이스
@@ -85,7 +85,7 @@
 <br>
 
 ## 📌 ER다이어그램
-![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/blob/master/E-R.png?raw=true)
+![E-R](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/6ce064b5-ea89-4f44-b136-d7f8fdbd3541)
 <br>
 
 ## 🖥 화면 구성
