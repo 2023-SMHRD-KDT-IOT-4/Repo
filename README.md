@@ -145,7 +145,7 @@
 <br>
 
 ### 게시판
-![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/dc8b850a-2093-4303-902a-16200ec6dbde)
+![게시판](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/144170214/13e1d7b2-ce80-4c5b-bcef-a9db04a66cbc)
 <br>
 <ul><li>유저간의 소통할 수 있는 공간을 만들었고 제목 클릭 시 상세 게시물을 열람할 수 있고 자신이 작성한 게시물은 삭제할 수 있게 함</li></ul>
 <br>
