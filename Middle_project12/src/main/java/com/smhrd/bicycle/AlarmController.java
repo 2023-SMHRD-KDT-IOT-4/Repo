@@ -33,6 +33,7 @@ public class AlarmController {
 		int theft =  mapper.checkTheft();
 		// 도난 예상시 사용자알림
 		if (theft == 1) { // 도난 예상시(가속도센서 값 급격히 움직일 시)
+			// 커밋테스트
 			return "Alert: Theft detected!";
 		}else {
 			return "";
