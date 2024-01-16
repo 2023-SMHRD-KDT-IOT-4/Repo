@@ -145,12 +145,64 @@
 
   </tr>
   <tr>
-    <td align="center"><b>Frontend<br>메인화면코딩<br>맵API코딩<br>발표자료 및 산출문서 정리</b></td>
-    <td align="center"><b>Backend<br>아두이노 전체 센서 통합코드 작성 및 연결<br>프론트 백 연결 및 기능 구현<br>회로구성 설계도 작성</b></td>
-    <td align="center"><b>DataBase<br>아두이노 전체 센서 통합코드 작성 및 연결<br>프론트 백 연결 및 기능 구현<br>요구사항분석서 작성</b></td>
-    <td align="center"><b>DataBase<br>아두이노 전체 센서 통합코드 작성 및 연결<br>프론트 백 연결 및 기능 구현<br>요구사항정의서 작성</b></td>
-    <td align="center"><b>Frontend<br>재료조립 및 디자인 스케치<br>메인화면 코딩<br>시제품 틀 구성 제작<br>포스터 작성</b></td>
-    <td align="center"><b>Frontend<br>메인화면 코딩<br>경보 화면 코딩<br>화면설계서 작성</b></td>
+    <td align="center"><b>
+        <ul>
+            <li>Frontend</li>
+            <li>메인화면코딩</li>
+            <li>맵API코딩</li>
+            <li>발표자료 및 산출문서 정리</li>
+          </ul>
+    </b>
+    </td>
+       <td align="center"><b>
+        <ul>
+            <li>Backend</li>
+            <li>아두이노 전체 센서 통합코드 작성 및 연결</li>
+            <li>프론트 백 연결 및 기능 구현</li>
+            <li>회로구성 설계도 작성</li>
+          </ul>
+    </b>
+    </td>  
+       </td>
+       <td align="center"><b>
+        <ul>
+            <li>DataBase</li>
+            <li>아두이노 전체 센서 통합코드 작성 및 연결</li>
+            <li>프론트 백 연결 및 기능 구현</li>
+            <li>요구사항분석서 작성</li>
+          </ul>
+    </b>
+    </td>
+        <td align="center"><b>
+        <ul>
+            <li>DataBase</li>
+            <li>아두이노 전체 센서 통합코드 작성 및 연결</li>
+            <li>프론트 백 연결 및 기능 구현</li>
+            <li>요구사항정의서 작성</li>
+          </ul>
+    </b>
+    </td> 
+        <td align="center"><b>
+        <ul>
+            <li>Frontend</li>
+            <li>아두이노 전체 센서 통합코드 작성 및 연결</li>
+            <li>재료조립 및 디자인 스케치</li>
+            <li>메인화면 코딩</li>
+            <li>시제품 틀 구성 제작</li>
+            <li>포스터 작성</li>
+          </ul>
+    </b>
+    </td>
+      <td align="center"><b>
+        <ul>
+            <li>Frontend</li>
+            <li>아두이노 전체 센서 통합코드 작성 및 연결</li>
+            <li>메인화면 코딩</li>
+            <li>경보 화면 코딩</li>
+            <li>화면설계서 작성</li>
+          </ul>
+    </b>
+    </td>
 
   </tr>
   <tr>
