@@ -1,53 +1,106 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
+
+
+
+
 
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Generic - Forty by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="resources/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="resources/assets/css/noscript.css" /></noscript>
-	</head>
-	<style>
-	h1{
-		color: green;
-		margin: 20px;
-		text-align: center;
-	}
-		
-	#alert_wrap {
-    color: black; /* 텍스트 색상을 흰색으로 지정 */
-	text-align:center;		
-    /* 다른 스타일 속성들도 필요에 따라 추가할 수 있습니다. */
-	}
-	html{
+<head>
+<title>Generic - Forty by HTML5 UP</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="resources/assets/css/main.css" />
+<noscript>
+	<link rel="stylesheet" href="resources/assets/css/noscript.css" />
+</noscript>
+</head>
+<style>
+h1 {
+	color: green;
+	margin: 20px;
+	text-align: center;
+}
+
+#alert_wrap {
+	color: black;
+	text-align: center;
+}
+
+html {
 	background-color: rgba(123, 172, 118, 0.774);
-	display: flex;	
+	display: flex;
 }
+
 #pw {
-	color:black;
+	color: black;
 }
-#pw.input_text{
+
+#pw.input_text {
 	background-color: whitesmoke;
-	
 }
-#id.input_text{
+
+#id.input_text {
 	background-color: whitesmoke;
-	
 }
-span.blind{
+
+span.blind {
 	font-weight: bold;
 	vertical-align: middle;
 	size: 20px
-	
 }
-	</style>
+</style>
 
-	
-	<body class="is-preload">
+
+<body class="is-preload">
+
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<a href="1" class="logo"><strong>IoT</strong> <span>by
+					Arguinom</span></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="1">Home</a></li>
+				<c:choose>
+					<c:when test="${empty sessionScope.user_id }">
+						<li><a href="login">마이페이지</a></li>
+						<li><a href="login">LOCK/UNLOCK</a></li>
+						<li><a href="login">게시판</a></li>
+					</c:when>
+					<c:otherwise>
+						<li><a href="mypage">마이페이지</a></li>
+						<li><a href="lockUnlock">LOCK/UNLOCK</a></li>
+						<li><a href="Board_01">게시판</a></li>
+					</c:otherwise>
+				</c:choose>
+				<li><a href="notice">유의사항</a></li>
+			</ul>
+			<ul class="actions stacked">
+				<c:choose>
+					<c:when test="${empty sessionScope.user_id }">
+						<li><a href="login" class="button fit">Log In</a></li>
+					</c:when>
+					<c:otherwise>
+						<li><a href="logoutClick" class="button fit">Log out</a></li>
+					</c:otherwise>
+				</c:choose>
+			</ul>
+		</nav>
+
+
+
 
 		<div id="wrapper">
                <header id="header" class="alt">
@@ -233,20 +286,21 @@ span.blind{
 									
 						                if (res === "Alert: Theft detected!") {
 						                    console.log("도난 감지됨!");
-					
-						                    alert("도난 감지됨!");
-						                    window.location.href = "Alarm";
-						                } else {
-						                    console.log("평화로움..");
-						                }
-									},
-									error : function(){
-										console.log("서버 응답 실패");
-									}
-								})
-							}
-					         </script>
 
-			   
-				  </body>
-			   </html>
+					
+
+					if (res === "Alert: Theft detected!") {
+							
+
+				    alert("도난 감지됨!");
+				    window.location.href = "Alarm";
+				 } 
+				 },
+					error : function() {
+				    console.log("서버 응답 실패");
+			     }
+				 })
+			     }
+		</script>
+</body>
+</html>
