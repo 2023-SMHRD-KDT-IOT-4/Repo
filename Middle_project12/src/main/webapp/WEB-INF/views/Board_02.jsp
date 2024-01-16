@@ -160,7 +160,6 @@
 				},
 				error : function(){
 					console.log("서버 응답 실패");
-					console.log("서버 응답 실패");
 				}
 			})
 		}
