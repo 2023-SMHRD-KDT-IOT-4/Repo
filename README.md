@@ -12,12 +12,12 @@
 <br>
 
 ## ⭐ 주요 기능
-* <a href="https://github.com/2023-SMHRD-KDT-IOT-4/Repo/blob/e338a00583aa2464fad3ee2ae2d7d5b79cd18b7e/Middle_project12/src/main/webapp/WEB-INF/views/join.jsp" target='_blank'>로그인/회원가입</a>
-* LOCK/UNLOCK
-* 라이딩기록확인
-* 현재위치확인
-* 게시판
-* 마이페이지
+* <a href="https://github.com/2023-SMHRD-KDT-IOT-4/Repo/blob/3f8803bbcdb0ba4b6b3fc7eb2a0e6ec6611d8b53/Middle_project12/src/main/java/com/smhrd/bicycle/UserController.java" target='_blank'>로그인/회원가입</a>
+* <a href="https://github.com/2023-SMHRD-KDT-IOT-4/Repo/blob/3f8803bbcdb0ba4b6b3fc7eb2a0e6ec6611d8b53/Middle_project12/src/main/java/com/smhrd/bicycle/ParkingController.java" target='_blank'>LOCK/UNLOCK</a>
+* <a href="https://github.com/2023-SMHRD-KDT-IOT-4/Repo/blob/3f8803bbcdb0ba4b6b3fc7eb2a0e6ec6611d8b53/Middle_project12/src/main/java/com/smhrd/bicycle/GpsController.java" target='_blank'>라이딩기록확인</a>
+* <a href="https://github.com/2023-SMHRD-KDT-IOT-4/Repo/blob/3f8803bbcdb0ba4b6b3fc7eb2a0e6ec6611d8b53/Middle_project12/src/main/java/com/smhrd/bicycle/GpsController.java" target='_blank'>현재위치확인</a>
+* <a href="https://github.com/2023-SMHRD-KDT-IOT-4/Repo/blob/3f8803bbcdb0ba4b6b3fc7eb2a0e6ec6611d8b53/Middle_project12/src/main/java/com/smhrd/bicycle/BoardController.java" target='_blank'>게시판</a>
+* <a href="https://github.com/2023-SMHRD-KDT-IOT-4/Repo/blob/3f8803bbcdb0ba4b6b3fc7eb2a0e6ec6611d8b53/Middle_project12/src/main/java/com/smhrd/bicycle/UserController.java" target='_blank'>마이페이지</a>
 <br>
 
 ## ⛏ 기술스택
