@@ -108,8 +108,6 @@
 ![도난알림](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/144170214/80aea98c-f22a-4f2e-8d18-3bd02d5406a2)
 <br>
 
-![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/144170214/55a482a7-6b1e-4fed-a868-c10d457bf90c)
-
 ### 메뉴
 ![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/d1d141ec-62f7-4090-89cc-9eeb01d977a5)
 <br>
