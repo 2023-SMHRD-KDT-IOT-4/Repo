@@ -78,6 +78,10 @@
 
 <br>
 
+## 📌 회로도
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/cd60ee16-f249-42bb-846b-eb5e7abfc738)
+<br>
+
 ## 📌 SW유스케이스
 ![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/3b2d2412-49bb-41ce-80d9-4c2bbabce6ad)
 
@@ -95,37 +99,55 @@
 ### 메인화면
 ![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/25c3f866-21e8-41db-8017-640027c3be2d)
 <br>
+<ul><li>BSS시스템 첫 화면구성</li></ul>
+<br>
 
 ### 로그인/회원가입/마이페이지(회원정보수정)
 ![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/40a60943-5bb2-436e-a4e0-3ccb860e2b73)
+<br>
+<ul><li>회원 가입페이지에서 회원 가입할 수 있고 로그인 후 기능들을 사용할 수 있고 마이페이지에서 회원 정보수정 기능을 이용할 수 있음</li></ul>
 <br>
 
 ### 잠금/잠금해제
 ![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/f5a4771e-905f-469b-bbd5-00f1e0a165c3)
 <br>
+<ul><li>해당 페이지에서 자전거를 잠금(이동 불가 / 잠금 해체(이동 가능) 상태로 전환 가능</li></ul>
+<br>
 
 ### 도난 감지 알람
 ![도난알림](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/144170214/925023f0-4cab-4e92-a886-8cc84e5b93b6)
+<br>
+<ul><li>잠금상태에서 GPS 값이 변경된다면 도난 상태로 간주하여 장치에서 경보음 및 웹상으로 알림 전송</li></ul>
 <br>
 
 ### 메뉴
 ![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/d1d141ec-62f7-4090-89cc-9eeb01d977a5)
 <br>
+<ul><li>다른 페이지에서 사용하고자 하는 페이지로 이동을 용이하게 메뉴를 각 페이지에 할당함</li></ul>
+<br>
 
 ### 라이딩기록
 ![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/3ae8055f-8209-41e5-a74b-2f691c95ab21)
+<br>
+<ul><li>주행 후 날짜 입력 시에 해당 날짜에 주행한 거리, 속도, 시간과 지도에 주행한 경로를 표시함</li></ul>
 <br>
 
 ### 자전거위치찾기
 ![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/3fe91cec-6b3b-4558-a2dd-fbd3a4e461bf)
 <br>
+<ul><li>현재 자전거의 위치를 지도에 표시하여 도난 시 자전거의 위치를 파악하게 함</li></ul>
+<br>
 
 ### 유의사항
 ![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/cbd87ac5-f47c-490b-8c5f-1970b662ed11)
 <br>
+<ul><li>사용 시 유의 사항</li></ul>
+<br>
 
 ### 게시판
-![글작성](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/144170214/ee71ef6e-9900-4e15-b15c-f5ede29097bd)
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/dc8b850a-2093-4303-902a-16200ec6dbde)
+<br>
+<ul><li>유 저간의 소통할 수 있는 공간을 만들었고 제목 클릭 시 상세 게시물을 열람할 수 있고 자신이 작성한 게시물은 삭제할 수 있게 함</li></ul>
 <br>
 
 ## 👨‍👩‍👦‍👦 팀원 역할
@@ -148,87 +170,60 @@
     <td align="center"><strong>김상현</strong></td>
 
   </tr>
+  
   <tr>
-    <td align="center"><b>
-        <ul>
-            <li>Frontend</li>
-            <li>메인화면코딩</li>
-            <li>맵API코딩</li>
-            <li>발표자료 및 산출문서 정리</li>
-          </ul>
-    </b>
-    </td>
-       <td align="center"><b>
-        <ul>
-            <li>Backend</li>
-            <li>아두이노 전체 센서 통합코드 작성 및 연결</li>
-            <li>프론트 백 연결 및 기능 구현</li>
-            <li>회로구성 설계도 작성</li>
-          </ul>
-    </b>
-    </td>  
-       </td>
-       <td align="center"><b>
-        <ul>
-            <li>DataBase</li>
-            <li>아두이노 전체 센서 통합코드 작성 및 연결</li>
-            <li>프론트 백 연결 및 기능 구현</li>
-            <li>요구사항분석서 작성</li>
-          </ul>
-    </b>
-    </td>
-        <td align="center"><b>
-        <ul>
-            <li>DataBase</li>
-            <li>아두이노 전체 센서 통합코드 작성 및 연결</li>
-            <li>프론트 백 연결 및 기능 구현</li>
-            <li>요구사항정의서 작성</li>
-          </ul>
-    </b>
-    </td> 
-        <td align="center"><b>
-        <ul>
-            <li>Frontend</li>
-            <li>아두이노 전체 센서 통합코드 작성 및 연결</li>
-            <li>재료조립 및 디자인 스케치</li>
-            <li>메인화면 코딩</li>
-            <li>시제품 틀 구성 제작</li>
-            <li>포스터 작성</li>
-          </ul>
-    </b>
-    </td>
-      <td align="center"><b>
-        <ul>
-            <li>Frontend</li>
-            <li>아두이노 전체 센서 통합코드 작성 및 연결</li>
-            <li>메인화면 코딩</li>
-            <li>경보 화면 코딩</li>
-            <li>화면설계서 작성</li>
-          </ul>
-    </b>
-    </td>
-
+    <td align="center"><b>Frontend</b></td>
+    <td align="center"><b>Backend</b></td>  
+    <td align="center"><b>DataBase</b></td>  
+    <td align="center"><b>DataBase</b></td>  
+    <td align="center"><b>Frontend</b></td>
+    <td align="center"><b>Frontend</b></td>
   </tr>
+  
   <tr>
     <td align="center"><a href="https://github.com/HUNMINRYU" target='_blank'>github</a></td>
     <td align="center"><a href="https://github.com/dlrjsdud" target='_blank'>github</a></td>
-    <td align="center"><a href="https://github.com/WooRiGyeoRe" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/ruwlakfn" target='_blank'>github</a></td>
     <td align="center"><a href="https://github.com/YangYnuHyeong" target='_blank'>github</a></td>
     <td align="center"><a href="https://github.com/dlwlsdn808" target='_blank'>github</a></td>
     <td align="center"><a href="https://github.com/sangiot" target='_blank'>github</a></td>
 
   </tr>
   </table>
+  
+  ### 류훈민
+  * **프론트엔드**
+  * **카카오맵api 이용하여 자전거의 현재위치** 구현
+  * **카카오맵api 이용하여 라이딩 주행 기록** 구현
+  * 전반적인 웹 서비스 **화면 디자인** 및 **반응형 웹 적용**
+  * 기획 및 최종 발표 PPT 제작
+  * 시연영상 제작
+
+### 이건영
+  * **프로젝트 팀장**, 퍼블리싱을 제외한 프로젝트 전반적인 기능 구현
+  * Spring 프로젝트 환경설정 및 라이브러리 추가
+  * 회원가입 및 회원정보수정 프론트엔드/백엔드 기능구현
+  * 잠금/잠금해제 프론트엔드/백엔드 기능구현
+  * 카카오맵 api를 이용한 일일 라이딩기록 확인 프론트엔드/백엔드 기능구현
+  * 카카오맵 api를 이용한 내 자전거 현재 위치 확인 비동기통신 프론트엔드/백엔드 기능구현
+  * 게시판 글 작성 및 삭제, 게시판 전체보기 프론트엔드/백엔드 기능구현
+  * 자전거 도난 예상시 웹페이지 사용자에게 알림 기능 프론트엔드/백엔드 기능구현
+  * 프로젝트 구현중 필요에 따라 데이터 베이스 테이블,컬럼 생성 및 삭제 / 데이터타입 및 제약조건 수정
+  * Arduino gps, 가속도센서 라이브러리 추가 및 구현
+  * Arduino 3가지 센서 및 모듈, 와이파이 통신 코드 통합
+  * 각 센서에서 받은 위도,경도,가속도 값을 파싱하여 http통신을 통해 Arduino to Spring 전달 기능구현
+  * 웹페이지에서 잠금/잠금해제, 알림중지(모듈 청각적 알림 중지) 데이터 Spring to Arduino 전달 기능구현
+
 
 ## 🤾‍♂️ 트러블슈팅
 ### ● 문제1
-1.esp 나노보드 블루트스 통신 사용=>거리제한으로 와이파이 통신 으로 변경으로인한 보드 변경=> esp32사용
-<br>
-2. esp32 정보 및 사용 제한으로 인한  uno보드로 변경
-<br>
-3. uno보드의 와이파이 모듈 연결 문제로 인한 esp32로 변경
-<br>
-4. 2번문항 에서 설명 드렸던 정보 부족 및 사용 제한적인 면을 팀원의 협력 으로 해결
+<ol>
+    <li>esp 나노보드 블루트스 통신 사용=>거리제한으로 와이파이 통신 으로 변경으로인한 보드 변경=> esp32사용</li>
+    <li>esp32 정보 및 사용 제한으로 인한  uno보드로 변경</li>
+    <li>uno보드의 와이파이 모듈 연결 문제로 인한 esp32로 변경</li>
+    <li>2번문항 에서 설명 드렸던 정보 부족 및 사용 제한적인 면을 팀원의 협력 으로 해결</li>
+</ol> 
+
  
   
   
