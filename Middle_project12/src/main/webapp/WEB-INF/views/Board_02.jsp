@@ -134,7 +134,6 @@
                </button>
             </ul>
          </div>
-      
 
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -160,6 +159,7 @@
 	                } 
 				},
 				error : function(){
+					console.log("서버 응답 실패");
 					console.log("서버 응답 실패");
 				}
 			})
