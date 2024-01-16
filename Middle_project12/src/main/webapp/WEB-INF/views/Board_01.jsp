@@ -75,6 +75,7 @@ html{
 					  </tr>
 					</thead>
 					<tbody>
+				  
 				   <!-- 게시물 출력 -->
 				   <c:forEach items="${list}" var="b">
 							<tr>
@@ -103,7 +104,7 @@ html{
 			 
 		  </div>
 
-		<!-- Wrapper -->
+
 		<div id="wrapper">
 
             <!-- Header -->
@@ -144,11 +145,9 @@ html{
 	               </c:choose>
                   </ul>
                </nav>
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
 					
 
-		 <!-- Scripts -->
+
          <script src="resources/assets/js/jquery.min.js"></script>
          <script src="resources/assets/js/jquery.scrolly.min.js"></script>
          <script src="resources/assets/js/jquery.scrollex.min.js"></script>
@@ -166,16 +165,11 @@ html{
 				url : "checkTheft",
 				type : "post",
 				datatype : "text",
-				success : function(res){ //성공하면 페이지 이동 되야함 ㅇㅇ
-					console.log("서버 응답 성공");
-				
-	                if (res === "Alert: Theft detected!") {
-	                    console.log("도난 감지됨!");
+				success : function(res){ //성공하면 페이지 이동
 
+	                if (res === "Alert: Theft detected!") {
 	                    alert("도난 감지됨!");
 	                    window.location.href = "Alarm";
-	                } else {
-	                    console.log("평화로움..");
 	                }
 				},
 				error : function(){

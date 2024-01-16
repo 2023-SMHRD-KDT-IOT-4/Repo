@@ -1,9 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
-    
-    
-    <!-- 비밀번호랑 비밀번호 확인 다를경우 다시 입력기능 구현 안댐 -->
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -51,11 +49,7 @@ span.blind{
 	
 	<body class="is-preload">
 
-	
-		<!-- Wrapper -->
 		<div id="wrapper">
-
-            <!-- Header -->
                <header id="header" class="alt">
                   <a href="1" class="logo"><strong>IoT</strong> <span>by Arguinom</span></a>
                   <nav>
@@ -63,7 +57,6 @@ span.blind{
                   </nav>
                </header>
 
-            <!-- Menu -->
                <nav id="menu">
                   <ul class="links">
                      <li><a href="1">Home</a></li>
@@ -93,13 +86,8 @@ span.blind{
                   </ul>
                </nav>
 
-				
-
-						<!-- Wrapper -->
 							<div id="wrapper" width="400px">
-				
-								<!-- Header -->
-									
+
 										<div class="content">
 											<div class="inner">
 												<h1>회원가입</h1>
@@ -221,8 +209,7 @@ span.blind{
 								
 						
 							<div id="bg"></div>
-				
-					    <!-- Scripts -->
+
 						<script src="resources/assets/js/jquery.min.js"></script>
 						<script src="resources/assets/js/jquery.scrolly.min.js"></script>
 						<script src="resources/assets/js/jquery.scrollex.min.js"></script>

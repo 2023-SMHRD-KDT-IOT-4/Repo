@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
-<!-- 모든페이지 도난예상 메서드 호출하는거 써야함 -->
 <html>
 <head>
       <title>Landing - Forty by HTML5 UP</title>
@@ -17,42 +16,39 @@
        
    *{
       font-family: 'Jua', sans-serif;
-   }
+    }
       
    a:hover {
-   text-decoration: underline;
-   }
+		  	 text-decoration: underline;
+		   }
 
 
    #alert_wrap {
-    background-color: red; 
-    color: black; 
-   text-align:center;      
-   position:relative;   
-   bottom:-30px;
- 
-   }
+				    background-color: red; 
+				    color: black; 
+				    text-align:center;      
+				    position:relative;   
+				    bottom:-30px;			 
+			   }
 
    html{
-   background-color: black;
-   }
+  		 background-color: black;
+   	   }
 
 
    
 
    .li{
-      font-size: 50px;  
-
-   }
+      	font-size: 50px;  
+	  }
     /* 이미지 */
    .image-container {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            overflow: hidden;
-         margin:auto;
-      
-        }
+			            position: relative;
+			            width: 300px;
+			            height: 300px;
+			            overflow: hidden;
+			            margin:auto;     
+       				 }
 
         img { display:block; }
 
@@ -73,7 +69,6 @@
         }
 
       /*텍스트*/
-
       .text-container {
             font-size: 50px; 
             opacity: 0; 
@@ -98,10 +93,8 @@
  
 </head>
 <body class="is-preload">
-  <!-- Wrapper -->
+
       <div id="wrapper">
-   
-         <!-- Header -->
          <header id="header" class="alt">
             <a href="1" class="logo"><strong>IoT</strong> <span>by Arguinom</span></a>
             <nav>
@@ -138,8 +131,7 @@
 	               </c:choose>
             </ul>
           </nav>
-
-         
+        
                   <div class="inner">
                   <button onclick="location.href='testAlarm'">testAlarm</button>                  
                       
@@ -158,7 +150,7 @@
                         <img src="resources/images/pic15_alarm_03.jpg" alt="" style="width: 100%;" />
                      </div>
                      
-                     <!-- TODO -->
+
                      <ul class="alert_wrap" id="alert_wrap">
                         <button onclick="location.href='stopAlarm'" type="submit" class="alert_text" id="log.join">
                                           <span class="btn_text">알람 중지</span>
@@ -171,7 +163,7 @@
                         
 
                            
-      <!-- Scripts -->
+
          <script src="resources/assets/js/jquery.min.js"></script>
          <script src="resources/assets/js/jquery.scrolly.min.js"></script>
          <script src="resources/assets/js/jquery.scrollex.min.js"></script>
@@ -189,17 +181,11 @@
 				url : "checkTheft",
 				type : "post",
 				datatype : "text",
-				success : function(res){ //성공하면 페이지 이동 되야함 ㅇㅇ
-					console.log("서버 응답 성공");
-				
+				success : function(res){ //성공하면 페이지 이동				
 	                if (res === "Alert: Theft detected!") {
-	                    console.log("도난 감지됨!");
-
 	                    alert("도난 감지됨!");
 	                    window.location.href = "Alarm";
-	                } else {
-	                    console.log("평화로움..");
-	                }
+	                } 
 				},
 				error : function(){
 					console.log("서버 응답 실패");

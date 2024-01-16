@@ -13,7 +13,7 @@
   <noscript><link rel="stylesheet" href="resources/assets/css/noscript.css" /></noscript>
 </head>
 <body>
-<!-- Wrapper -->
+               
 		<div id="wrapper">
 
             <!-- Header -->
@@ -24,7 +24,6 @@
                   </nav>
                </header>
 
-            <!-- Menu -->
                <nav id="menu">
                   <ul class="links">
                      <li><a href="1">Home</a></li>
@@ -61,9 +60,7 @@
          <script src="resources/assets/js/breakpoints.min.js"></script>
          <script src="resources/assets/js/util.js"></script>
          <script src="resources/assets/js/main.js"></script>
-         
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
+
 <div class="container">
   <h2 style="color:black;">Arguinom 게시판</h2>
   <div class="panel panel-default">
@@ -96,7 +93,6 @@
     		</tr>
     		<tr>
     			<td colspan="2" align="center">
-    			<!-- 주소 다시 확인하셈 -->
     				<button onclick="location.href='/bicycle/Board_01'" class="btn btn-sm btn-success">리스트</button>    			
     			</td>
     		</tr>
