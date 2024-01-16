@@ -12,7 +12,7 @@
 <br>
 
 ## ⭐ 주요 기능
-* 로그인/회원가입(https://github.com/2023-SMHRD-KDT-IOT-4/Repo/blob/94e1b3a93c48cc3fdb51d4468de151930705faa6/Middle_project12/src/main/webapp/WEB-INF/views/Alarm.jsp#L16)
+* <a href="https://github.com/2023-SMHRD-KDT-IOT-4/Repo/blob/e338a00583aa2464fad3ee2ae2d7d5b79cd18b7e/Middle_project12/src/main/webapp/WEB-INF/views/join.jsp" target='_blank'>로그인/회원가입</a>
 * LOCK/UNLOCK
 * 라이딩기록확인
 * 현재위치확인
