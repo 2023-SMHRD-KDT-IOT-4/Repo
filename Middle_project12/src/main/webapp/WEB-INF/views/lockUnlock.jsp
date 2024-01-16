@@ -150,33 +150,33 @@
   <script src="resources/assets/js/util.js"></script>
   <script src="resources/assets/js/main.js"></script>
   <script>
-         $(document).ready(function(){
-     		setInterval(function() {alarm()}, 3000)
-     	 })
-     	 
-     	 function alarm(){
-			$.ajax({
-				url : "checkTheft",
-				type : "post",
-				datatype : "text",
-				success : function(res){ //성공하면 페이지 이동 되야함 ㅇㅇ
-					console.log("서버 응답 성공");
-				
-	                if (res === "Alert: Theft detected!") {
-	                    console.log("도난 감지됨!");
-
-	                    alert("도난 감지됨!");
-	                    window.location.href = "Alarm";
-	                } else {
-	                    console.log("평화로움..");
-	                }
-				},
-				error : function(){
-					console.log("서버 응답 실패");
-				}
+			$(document).ready(function() {
+				setInterval(function() {
+					alarm()
+				}, 3000)
 			})
-		}
-         </script>
+
+			function alarm() {
+				$.ajax({
+					url : "checkTheft",
+					type : "post",
+					datatype : "text",
+					success : function(res) {
+					
+
+					if (res === "Alert: Theft detected!") {
+							
+
+				    alert("도난 감지됨!");
+				    window.location.href = "Alarm";
+				 } 
+				 },
+					error : function() {
+				    console.log("서버 응답 실패");
+			     }
+				 })
+			     }
+		</script>
 
 </body>
 </html>

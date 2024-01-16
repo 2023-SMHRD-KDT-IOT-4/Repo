@@ -31,17 +31,14 @@ html {
 }
 
 .find_wrap {
-            position: relative; /* 상위 요소를 relative로 설정 */
-        }
+	position: relative;
+}
 
-        #log.join {
-            position: absolute;  /*버튼을 absolute로 설정 */
-            right: 10px; /* 오른쪽으로부터 10px 떨어진 위치로 설정 */
-            top: 0; /* 상단과의 거리를 0으로 설정하여 상단에 붙임 */
-            
-        }
-
-
+#log.join {
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
 </style>
 <body class="is-preload">
 
@@ -51,7 +48,8 @@ html {
 
 		<!-- Header -->
 		<header id="header" class="alt">
-			<a href="1" class="logo"><strong>IoT</strong> <span>by Arguinom</span></a>
+			<a href="1" class="logo"><strong>IoT</strong> <span>by
+					Arguinom</span></a>
 			<nav>
 				<a href="#menu">Menu</a>
 			</nav>
@@ -61,29 +59,29 @@ html {
 		<nav id="menu">
 			<ul class="links">
 				<li><a href="1">Home</a></li>
-             		 <c:choose>
-				         <c:when test="${empty sessionScope.user_id }">
-				            <li><a href="login">마이페이지</a></li>
-				            <li><a href="login">LOCK/UNLOCK</a></li>
-				            <li><a href="login">게시판</a></li>
-				         </c:when>
-				         <c:otherwise>
-				                  <li><a href="mypage">마이페이지</a></li>
-				                  <li><a href="lockUnlock">LOCK/UNLOCK</a></li>
-				                  <li><a href="Board_01">게시판</a></li>
-				         </c:otherwise>
-			         </c:choose>                              
-               		 <li><a href="notice">유의사항</a></li>
+				<c:choose>
+					<c:when test="${empty sessionScope.user_id }">
+						<li><a href="login">마이페이지</a></li>
+						<li><a href="login">LOCK/UNLOCK</a></li>
+						<li><a href="login">게시판</a></li>
+					</c:when>
+					<c:otherwise>
+						<li><a href="mypage">마이페이지</a></li>
+						<li><a href="lockUnlock">LOCK/UNLOCK</a></li>
+						<li><a href="Board_01">게시판</a></li>
+					</c:otherwise>
+				</c:choose>
+				<li><a href="notice">유의사항</a></li>
 			</ul>
 			<ul class="actions stacked">
-					<c:choose>
-	                  <c:when test="${empty sessionScope.user_id }">
-	                     <li><a href="login" class="button fit">Log In</a></li>
-	                  </c:when>
-	                  <c:otherwise>
-	                     <li><a href="logoutClick" class="button fit">Log out</a></li>
-	                  </c:otherwise>
-	               </c:choose>
+				<c:choose>
+					<c:when test="${empty sessionScope.user_id }">
+						<li><a href="login" class="button fit">Log In</a></li>
+					</c:when>
+					<c:otherwise>
+						<li><a href="logoutClick" class="button fit">Log out</a></li>
+					</c:otherwise>
+				</c:choose>
 			</ul>
 		</nav>
 
@@ -110,7 +108,7 @@ html {
 		</ul>
 		<form id="frmNIDLogin" name="frmNIDLogin" target="_top"
 			autocomplete="off" action="loginClick" method="POST">
-			
+
 
 
 			<ul class="panel_wrap">
@@ -122,12 +120,11 @@ html {
 									<span class="icon_id"> <span class="blind">아이디</span>
 									</span>
 								</div>
-								<br> <input type="text" id="id" name="user_id" placeholder="아이디"
-									title="아이디" class="input_text" maxlength="41" value="">
-								<span role="button" class="btn_delete" id="id_clear"
-									style="display: none;"> <span class="icon_delete">
-
-								</span>
+								<br> <input type="text" id="id" name="user_id"
+									placeholder="아이디" title="아이디" class="input_text" maxlength="41"
+									value=""> <span role="button" class="btn_delete"
+									id="id_clear" style="display: none;"> <span
+									class="icon_delete"> </span>
 								</span>
 							</div>
 							<br>
@@ -141,12 +138,10 @@ html {
 									maxlength="16"> <span role="button" class="btn_delete"
 									id="pw_clear" style="display: none;"> <span
 									class="icon_delete"> </span>
-								</span>
-								<br>
-								<br>
+								</span> <br> <br>
 							</div>
 						</div>
-						
+
 						<div class="login_keep_wrap" id="login_keep_wrap">
 
 
@@ -167,12 +162,11 @@ html {
 							<strong>아이디</strong>를 입력해 주세요.
 						</div>
 					</div>
-						<ul class="alert_wrap" id="alert_wrap">
-							<input type="submit"
-								class="alert_text" id="log.join" value="로그인">
-								
-							
-						</ul>
+					<ul class="alert_wrap" id="alert_wrap">
+						<input type="submit" class="alert_text" id="log.join" value="로그인">
+
+
+					</ul>
 					<div class="login_error_wrap" id="err_empty_pw"
 						style="display: none;">
 						<div class="error_message">
@@ -183,23 +177,22 @@ html {
 						style="display: none;">
 						<div class="error_message" style="width: 90%"></div>
 					</div>
-					<div class="btn_login_wrap">
-					</div>
+					<div class="btn_login_wrap"></div>
 	</div>
 	</li>
 	</ul>
 	</form>
 	</div>
 	<ul style="margin: 23px">
-      <button onclick="location.href='join'" type="submit" class="find_text"
-         id="log.join">
-         <span class="btn_text">회원가입</span>
-      </button>
-   </ul>
+		<button onclick="location.href='join'" type="submit" class="find_text"
+			id="log.join">
+			<span class="btn_text">회원가입</span>
+		</button>
+	</ul>
 
 
 
-	
+
 	<script type="text/javascript" src="/login/js/bvsd.1.3.9.min.js"></script>
 	<script type="text/javascript" async=""
 		src="https://ssl.pstatic.net/tveta/libs/glad/prod/gfp-core.js"></script>

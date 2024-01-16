@@ -66,7 +66,7 @@
 			<!-- Main -->
 				<div id="main" class="alt">
 
-					<!-- One -->
+					
 	<div id="map" style="width:500px;height:400px;"></div>
     
     <script>
@@ -93,8 +93,8 @@
         // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
         // marker.setMap(null);    
 
-        var iwContent = '<div style="padding:5px;">현재 자전거 위치 <br></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-        iwPosition = new kakao.maps.LatLng(33.450701, 126.570667); //인포윈도우 표시 위치입니다
+        var iwContent = '<div style="padding:5px;">현재 자전거 위치 <br></div>', /
+        iwPosition = new kakao.maps.LatLng(33.450701, 126.570667); 
 
         // 인포윈도우를 생성합니다
         var infowindow = new kakao.maps.InfoWindow({
@@ -184,7 +184,7 @@
      	            infowindow.open(map, currentMarker);
      	        },
      	        error: function() {
-     	            console.log("실패");
+     	          
      	        }
      	    });
      	}
@@ -194,20 +194,16 @@
 				url : "checkTheft",
 				type : "post",
 				success : function(res){
-					console.log("서버 응답 성공");
+					
 				
 	                if (res === "Alert: Theft detected!") {
-	                    console.log("도난 감지됨!");
+	                  
 
 	                    alert("도난 감지됨!");
 	                    window.location.href = "Alarm";
-	                } else {
-	                    console.log("평화로움..");
-	                }
-				},
+	                } 
 				error : function(){
 					console.log("서버 응답 실패");
-				}
 			})
 		}
          </script>

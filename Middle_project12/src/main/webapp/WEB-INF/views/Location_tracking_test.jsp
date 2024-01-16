@@ -75,7 +75,7 @@
 				document.getElementById("arduino").innerHTML = res;
 			},
 			error : function(){
-				console.log("실패");
+			
 			}
 		})
 	} // TODO -> 위도 경도 값 같이 보낼텐데, 파싱 어떻게? => res.substr(0,9)=위도, res.substr(10)=경도
@@ -85,11 +85,11 @@
 			url : "^%$%$^#WE",
 			type : "post",
 			datatype : "int",
-			success : function(res){ //성공하면 페이지 이동 되야함 ㅇㅇ
-				console.log("굿");
+			success : function(res){ 
+				
 			},
 			error : function(){
-				console.log("ㅋㅋ");
+				
 			}
 		})
 	}
