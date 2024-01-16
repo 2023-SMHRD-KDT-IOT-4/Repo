@@ -25,24 +25,20 @@ public class UserController {
 	
 	
 	@Autowired // 의존성 주입
-	UserMapper mapper; // Usermapper 인터페이스로 가는 거
+	UserMapper mapper;
 	
 	//로그인
 	@RequestMapping(value="loginClick"  , method=RequestMethod.POST)
-	public String loginclick(@RequestParam("user_id") String user_id , @RequestParam("user_pw") String user_pw
-			, HttpSession session, HttpServletResponse response) throws IOException {
+	public String loginclick(@RequestParam("user_id") String user_id , @RequestParam("user_pw") String user_pw, HttpSession session, HttpServletResponse response) throws IOException {
 		
 		User user = new User(user_id, user_pw);
 		User result = mapper.login(user);
 		
 		if (result == null) { // 로그인 실패
-			System.out.println("로그인 실패");
 			return "redirect:/login";
 		} else { // 로그인 성공
 			 session.setAttribute("user_id", result.getUser_id());
 			 session.setAttribute("user_name", result.getUser_name());
-			 System.out.println((String)session.getAttribute("user_id"));
-			 System.out.println((String)session.getAttribute("user_name"));
 			 return "redirect:/";
 		}
 
@@ -64,8 +60,6 @@ public class UserController {
 	public String join(@RequestParam("user_id") String user_id, @RequestParam("user_pw") String user_pw,
 						@RequestParam("user_birthdate") String user_birthdate, @RequestParam("user_name") String user_name,
 						@RequestParam("user_profile_img") MultipartFile file, HttpServletRequest request) {
-						//joined_at / user_role 안받아옴
-		System.out.println(file.getOriginalFilename());
 		//이미지 이름 랜덤 생성 -> UUID
 		String newFileName = UUID.randomUUID().toString()+file.getOriginalFilename();
 		//절대경로 변수에 저장
@@ -88,10 +82,8 @@ public class UserController {
 		
 		//result값을 jsp에서 받아서 성공했다면 db값 들어갔으니 메인페이로 이동, 실패했다면 페이지이동없이 실패 문구 띄워줌
 		if(res>0) {
-			System.out.println("회원가입 성공");
 			return "redirect:/";
 		}else {
-			System.out.println("회원가입 실패");
 			return "redirect:/";
 		}
 		
@@ -119,18 +111,12 @@ public class UserController {
 		      
 		      member.setUser_id(user);
 		      
-		      System.out.println(member.getUser_id()+member.getUser_name()+member.getUser_pw()+member.getUser_profile_img());
-		      
-		      int result = mapper.updateUserInfo(member);  // MemberMapper.xml <update> 바디 수행하고, 결과값 넘어옴 -> 몇 행이 수정되었습니다 => 몇행은 숫자니까 int 
-		      // @Autowired MemberMapper mapper; 이거!
-		      
-		      
+		      int result = mapper.updateUserInfo(member);
+		     
 		      // 결과처리
 		      if (result <= 0) { // 수정 실패
-		         System.out.println("수정 실패");
 		         return "redirect:/update";
 		      } else { // 수정 성공
-		         // session.setAttribute("Update", result); 뭐지.... 
 		         return "redirect:/";
 		      }
 

@@ -25,15 +25,11 @@ public class GpsController {
 	
 	@RequestMapping(value="/data2", method=RequestMethod.GET)
 	public String data2(Model model,@RequestParam("created_at") String created_at, ObjectMapper objectMapper) {
-		System.out.println(created_at);
 		
 		List<Gps> list = mapper.rideRecode(created_at);
 		
-		System.out.println(list.size());
-		
 		try {
-	        String jsonString = objectMapper.writeValueAsString(list);
-	        System.out.println("JSON String: " + jsonString);
+	        String jsonString = objectMapper.writeValueAsString(list); //javaScript에서 사용 위해 JsonString으로 변환
 	        model.addAttribute("GpsList", jsonString);
 	    } catch (JsonProcessingException e) {
 	        // 예외 처리
