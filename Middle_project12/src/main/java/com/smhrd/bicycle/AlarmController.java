@@ -24,20 +24,13 @@ public class AlarmController {
 	@RequestMapping(value="stopAlarm" , method=RequestMethod.GET)
 	public String stopAlarm(HttpSession session) {
 		int res = mapper.stopAlarm();
-		if(res>0) {
-			System.out.println("stopalarm db 업데이트 성공");
-		}else {
-			System.out.println("stopalarm db 업데이트 실패");
-		}
 		return "redirect:/Alarm";
 	}
 	
 	
 	@RequestMapping(value = "/checkTheft", method = RequestMethod.POST)
 	public @ResponseBody String movePage(HttpSession session,HttpServletResponse response,Model model) {
-		
 		int theft =  mapper.checkTheft();
-
 		// 도난 예상시 사용자알림
 		if (theft == 1) { // 도난 예상시(가속도센서 값 급격히 움직일 시)
 			return "Alert: Theft detected!";

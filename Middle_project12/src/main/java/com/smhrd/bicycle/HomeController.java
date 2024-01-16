@@ -25,15 +25,9 @@ public class HomeController {
 	@Autowired
 	BoardMapper mapper;
 	
-	@RequestMapping(value="/44", method=RequestMethod.GET)
-	public String test() {
-		return "Location_tracking_test";
-	}
-	
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String index(HttpSession session) {
 		session.setAttribute("parkingLock", 1);
-		System.out.println(session.getAttribute("parkingLock"));
 		return "index";
 	}
 	
@@ -59,8 +53,6 @@ public class HomeController {
 		List<Board> list = mapper.boardList();
 		
 		model.addAttribute("list",list);
-		
-		System.out.println(list.size());
 		
 		return "Board_01";
 	}
@@ -95,7 +87,6 @@ public class HomeController {
 		return "join";
 	}
 	
-	//라이딩기록확인 페이지로 이동
 	@RequestMapping(value="/Data", method=RequestMethod.GET)
 	public String Data(Model model) {
 		return "Data";
