@@ -125,7 +125,7 @@
 <br>
 
 ### 게시판
-![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/dc8b850a-2093-4303-902a-16200ec6dbde)
+![글작성](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/144170214/ee71ef6e-9900-4e15-b15c-f5ede29097bd)
 <br>
 
 ## 👨‍👩‍👦‍👦 팀원 역할
