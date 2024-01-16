@@ -104,6 +104,10 @@
 ![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/f5a4771e-905f-469b-bbd5-00f1e0a165c3)
 <br>
 
+### 도난 감지 알람
+![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/144170214/eb012fe7-eb1b-478f-9ecf-92803c67c675)
+<br>
+
 ### 메뉴
 ![image](https://github.com/2023-SMHRD-KDT-IOT-4/Repo/assets/149558578/d1d141ec-62f7-4090-89cc-9eeb01d977a5)
 <br>
