@@ -21,10 +21,8 @@
 		</style>
    <body class="is-preload">
 
-      <!-- Wrapper -->
          <div id="wrapper">
 
-            <!-- Header -->
                <header id="header" class="alt">
                   <a href="1" class="logo"><strong>IoT</strong> <span>by Arguinom</span></a>
                   <nav>
@@ -32,7 +30,6 @@
                   </nav>
                </header>
 
-            <!-- Menu -->
                <nav id="menu">
                   <ul class="links">
                      <li><a href="1">Home</a></li>
@@ -62,7 +59,6 @@
                   </ul>
                </nav>
 
-            <!-- Banner -->
                <section id="banner" class="major">
                   <div class="inner">
                      <header class="major">
@@ -78,10 +74,8 @@
                   </div>
                </section>
 
-            <!-- Main -->
                <div id="main">
 
-                  <!-- One -->
                      <section id="one" class="tiles">
                         <article>
                            <span class="image">
@@ -108,9 +102,6 @@
                               <img src="resources/images/bicycle.jpg" alt="" />
                            </span>
                          
-        
-                           
-                           <!-- to map -->
                            <header class="major">
                              <c:choose>
                      <c:when test="${empty sessionScope.user_id }">
@@ -130,9 +121,7 @@
                               <img src="resources/images/gps.jpg" alt="" />
                            </span>
                            <header class="major">
-                        
-                        
-                           <!-- to map -->
+
                   <c:choose>
                      <c:when test="${empty sessionScope.user_id }">
                      <h3><a href="login" class="link">my Bicycle</a></h3>
@@ -166,8 +155,6 @@
                   </c:choose>
 
 
-
-                  <!-- <h3><a href="Board_01" class="link">게시판</a></h3> -->
                              
                            </header>
                         </article>
@@ -210,15 +197,8 @@
 
                </div>
 
-            <!-- Contact -->
-               
-               
-
-            
-
          </div>
 
-      <!-- Scripts -->
          <script src="resources/assets/js/jquery.min.js"></script>
          <script src="resources/assets/js/jquery.scrolly.min.js"></script>
          <script src="resources/assets/js/jquery.scrollex.min.js"></script>
@@ -236,16 +216,10 @@
 				url : "checkTheft",
 				type : "post",
 				datatype : "text",
-				success : function(res){ //성공하면 페이지 이동 되야함 ㅇㅇ
-					console.log("서버 응답 성공");
-				
+				success : function(res){ //성공하면 페이지 이동
 	                if (res === "Alert: Theft detected!") {
-	                    console.log("도난 감지됨!");
-
 	                    alert("도난 감지됨!");
 	                    window.location.href = "Alarm";
-	                } else {
-	                    console.log("평화로움..");
 	                }
 				},
 				error : function(){

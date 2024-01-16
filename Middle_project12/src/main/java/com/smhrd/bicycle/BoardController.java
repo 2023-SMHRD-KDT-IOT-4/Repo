@@ -31,7 +31,6 @@ public class BoardController {
 	@Autowired
 	BoardMapper mapper;
 	
-	//글 작성 후 게시 버튼 누르면 db저장 -> 실패시 글 다 날아감
 	@RequestMapping(value="write", method=RequestMethod.POST)
 	public String write(@ModelAttribute Board b, @RequestPart("photo") MultipartFile file, HttpSession session,
 			          HttpServletRequest request) {
@@ -54,12 +53,6 @@ public class BoardController {
 		
 		b.setUser_id((String)session.getAttribute("user_id"));
 		
-		if(b.getUser_id()==null) {
-			System.out.println("세션에 값 업슴");
-		}else {
-			System.out.println("굿");
-		}
-		
 		int res = mapper.write(b);
 		
 		
@@ -74,19 +67,15 @@ public class BoardController {
 	@RequestMapping(value="/board/content/{comm_seq}", method=RequestMethod.GET)
 	public String content(@PathVariable("comm_seq") String comm_seq, HttpSession session,Model model,HttpServletRequest request) {
 		Board content = mapper.boardcontent(comm_seq);
-		System.out.println(content.getComm_seq()+content.getComm_title()+content.getComm_content()+content.getComm_file()+content.getCreated_at()+content.getUser_id());
-
 		String imgPath = request.getSession().getServletContext().getRealPath("/img")+"\\"+content.getComm_file();
 		File imgFile = new File(imgPath);
 		
 		ImageToBase64 converter = new ImageToBase64();
 		String encodeResult = converter.convert(imgFile);
-		System.out.println(encodeResult);
 		
         content.setComm_file(encodeResult);
         
         model.addAttribute("content",content);
-        System.out.println(model.asMap().get("content"));
 		
 		return "BoardContent";
 	}

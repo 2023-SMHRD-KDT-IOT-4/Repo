@@ -49,10 +49,7 @@
    </style>
     <body class="is-preload">
 
-      <!-- Wrapper -->
       <div id="wrapper">
-
-            <!-- Header -->
                <header id="header" class="alt">
                   <a href="1" class="logo"><strong>IoT</strong> <span>by Arguinom</span></a>
                   <nav>
@@ -60,7 +57,7 @@
                   </nav>
                </header>
 
-            <!-- Menu -->
+
                <nav id="menu">
                   <ul class="links">
                      <li><a href="1">Home</a></li>
@@ -138,7 +135,7 @@
             </ul>
          </div>
       
-        <!-- Scripts -->
+
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
         <script src="assets/js/jquery.scrollex.min.js"></script>
@@ -156,17 +153,11 @@
 				url : "checkTheft",
 				type : "post",
 				datatype : "text",
-				success : function(res){ //성공하면 페이지 이동 되야함 ㅇㅇ
-					console.log("서버 응답 성공");
-				
+				success : function(res){ //성공하면 페이지 이동
 	                if (res === "Alert: Theft detected!") {
-	                    console.log("도난 감지됨!");
-
 	                    alert("도난 감지됨!");
 	                    window.location.href = "Alarm";
-	                } else {
-	                    console.log("평화로움..");
-	                }
+	                } 
 				},
 				error : function(){
 					console.log("서버 응답 실패");
