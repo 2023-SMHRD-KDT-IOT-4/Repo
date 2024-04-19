@@ -37,7 +37,8 @@
     <tr>
         <td>라이브러리</td>
         <td>
-            <img src="https://img.shields.io/badge/Kakao Map Api-007CE2?style=for-the-badge&logo=KaKao Map Api&logoColor=white">
+            <img src="https://img.shields.io/badge/lombok-007CE2?style=for-the-badge&logo=lombok&logoColor=white">
+            <img src="https://img.shields.io/badge/jackson-007CE2?style=for-the-badge&logo=jackson&logoColor=white">
         </td>
     </tr>
     <tr>
@@ -64,6 +65,12 @@
         <td>협업도구</td>
         <td>
             <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>
+        </td>
+    </tr>
+    <tr>
+        <td>API</td>
+        <td>
+            <img src="https://img.shields.io/badge/Kakao Map Api-007CE2?style=for-the-badge&logo=KaKao Map Api&logoColor=white">
         </td>
     </tr>
 </table>
